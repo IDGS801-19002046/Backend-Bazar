@@ -1,0 +1,1 @@
+web: gunicorn bazar_store.wsgi
