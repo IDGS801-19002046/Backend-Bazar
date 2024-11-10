@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     pkg-config \
     libzmq3-dev \
     gcc \
+    make \
     && rm -rf /var/lib/apt/lists/*
 
 # Establecer el directorio de trabajo dentro del contenedor
