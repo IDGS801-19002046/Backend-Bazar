@@ -1,10 +1,10 @@
 # Usar la imagen base de Python 3.12 slim
 FROM python:3.12-slim
 
-# Instalar dependencias del sistema necesarias para mysqlclient
+# Instalar dependencias del sistema necesarias para mysqlclient (usando MariaDB en lugar de MySQL)
 RUN apt-get update && apt-get install -y \
     build-essential \
-    libmysqlclient-dev \
+    libmariadb-dev \
     pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
